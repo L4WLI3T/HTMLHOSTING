@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback form validation</title>
+    <link rel="stylesheet" href="c.css">
+    <script src="j.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/ 
+         jquery/3.5.1/jquery.min.js">
+        </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>FEEDBACK </h2>
+        <div id="error"></div>
+        <form action="p.php"  enctype = "multipart/form-data" method="POST" id="form" onsubmit="return validate();">
+            <div class="ip">
+                <div id='name'>
+                <input type="text" placeholder="Name" id="name" name="name">
+                <span class="validate_form" id="name_validate_message"></span>
+                </div>
+            </div>
+            <div class="ip">
+                <input type="text" placeholder="Phone" id="phone" name="phone">
+            </div>
+            <div class="ip">
+                <input type="text" placeholder="Email" id="email" name="email">
+            </div>
+            <div class="ip">
+                <textarea placeholder="Valueable Feedback" id="mssg"></textarea>
+            </div>
+            <div class="sub">
+                <input type="SUBMIT" id ="submitbtn" name="submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
